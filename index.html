@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>United Technical College - Attendance System</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>United Technical College</h1>
+      <p>Attendance Management System</p>
+    </div>
+
+    <div class="form-section">
+
+      <input type="text" id="studentName"
+        placeholder="Enter Student Name">
+
+      <input type="text" id="studentRoll"
+        placeholder="Enter Roll Number">
+
+      <select id="studentCourse">
+        <option value="">Select Course</option>
+        <option>Computer Engineering</option>
+        <option>Civil Engineering</option>
+        <option>Electrical Engineering</option>
+        <option>IT ENGINEERING</option>
+      </select>
+
+      <button class="add-btn" onclick="addStudent()">
+        Add Student
+      </button>
+
+    </div>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>S.N</th>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Course</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="attendanceTable">
+      </tbody>
+
+    </table>
+
+    <div class="summary">
+
+      <h3>Attendance Summary</h3>
+
+      <p>Total Students:
+        <span id="totalStudents">0</span>
+      </p>
+
+      <p>Present:
+        <span id="presentCount">0</span>
+      </p>
+
+      <p>Absent:
+        <span id="absentCount">0</span>
+      </p>
+
+    </div>
+
+    <div class="footer">
+      © 2026 United Technical College
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
