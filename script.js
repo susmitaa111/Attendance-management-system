@@ -15,7 +15,9 @@ function addStudent(){
     alert("Please fill all fields!");
     return;
   }
-
+  // feat-design-login-ui
+  // fix-typo-in-readme
+  // chore-update-dependencies
   const student = {
     id: Date.now(),
     name: name,
